@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP చరిత్ర</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ecf0e5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .otp-popup {
+            background-color: #bfd7bc;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 320px;
+            text-align: center;
+            color: white;
+        }
+
+        .step-number {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .step-description {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .otp-input {
+            width: 90%;
+            padding: 12px;
+            margin-top: 25px;
+            border: 1px solid #9acfa2;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .otp-button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin-top: 25px;
+            background-color: #8ec3b0;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .otp-button:hover {
+            background-color: #7ab59e;
+        }
+    </style>
+</head>
+<body>
+    <div class="otp-popup">
+        <div class="step-number">ప్రమాణం 1</div>
+        <div class="step-description">కిందివరకు స్వీకరించబడిన OTP ను నమోదుచేయండి</div>
+        <input type="text" class="otp-input" placeholder="OTP నమోదుచేయండి">
+        <button class="otp-button">OTP నమోదుచేయండి</button>
+    </div>
+</body>
+</html>

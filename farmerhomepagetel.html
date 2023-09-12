@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>మొక్కలను ఎంచుకోండి</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e4eae7;
+            margin: 0;
+            padding: 35px;
+        }
+
+        .button-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+        }
+
+        .button {
+            margin: 50px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .button-image {
+            width: 280px;
+            height: 350px;
+            object-fit: cover;
+            border: 5px solid #327a21;
+            border-radius: 0;
+            transition: border-color 0.3s;
+        }
+
+        .button.selected .button-image {
+            border-color: #629766;
+            box-shadow: 0 0 0px rgba(15, 22, 16, 0.7);
+        }
+
+        .selected-indicator {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 10px;
+            font-size: 78px;
+        }
+
+        .header-text {
+            text-align: center;
+            font-weight: bold;
+            font-size: 38px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header-text">
+        మీరు అమ్మకాలను ఎంచుకోవాలనుకుంటున్నారా
+    </header>
+    <div class="button-row">
+        <div class="button">
+            <img class="button-image" src="/Users/anvithareddybarry/Desktop/Html/agriculture/1.jpeg" alt="మొక్క 1">
+        </div>
+        <div class="button">
+            <img class="button-image" src="/Users/anvithareddybarry/Desktop/Html/agriculture/2.jpeg" alt="మొక్క 2">
+        </div>
+        <div class="button">
+            <img class="button-image" src="/Users/anvithareddybarry/Desktop/Html/agriculture/3.jpeg" alt="మొక్క 3">
+        </div>
+    </div>
+    <div class="button-row">
+        <div class="button">
+            <img class="button-image" src="/Users/anvithareddybarry/Desktop/Html/agriculture/4.jpeg" alt="మొక్క 4">
+        </div>
+        <div class="button">
+            <img class="button-image" src="/Users/anvithareddybarry/Desktop/Html/agriculture/5.jpeg" alt="మొక్క 5">
+        </div>
+        <div class="button">
+            <img class="button-image" src="/Users/anvithareddybarry/Desktop/Html/agriculture/6.jpeg" alt="మొక్క 6">
+        </div>
+    </div>
+    <div class="button-row">
+        <div class="button">
+            <img class="button-image" src="/Users/anvithareddybarry/Desktop/Html/agriculture/7.jpeg" alt="మొక్క 7">
+        </div>
+        <div class="button">
+            <img class="button-image" src="/Users/anvithareddybarry/Desktop/Html/agriculture/8.jpeg" alt="మొక్క 8">
+        </div>
+        <div class="button">
+            <img class="button-image" src="/Users/anvithareddybarry/Desktop/Html/agriculture/9.jpeg" alt="మొక్క 9">
+        </div>
+    </div>
+    <div class="selected-indicator" id="selectedIndicator">
+        <!-- ఎంచుకున్న మొక్కల సూచన ఇక్కడ ప్రదర్శించబడుతుంది -->
+    </div>
+
+    <script>
+        const buttons = document.querySelectorAll('.button');
+        const selectedIndicator = document.getElementById('selectedIndicator');
+        let selectedCount = 0;
+
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                window.location.href = "quantity linktel.html"; // ప్రమాణం ఎంట్రీ పేజీకి దారికు దాటండి
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Connect</title>
+    <style>
+        /* Your existing CSS styles here */
+
+        .language-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .language-button {
+            font-size: 16px;
+            padding: 10px 20px;
+            background-color: #168a3c;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <!-- Your navigation links -->
+        </ul>
+    </nav>
+
+    <section>
+        <div class="language-buttons">
+            <button class="language-button" onclick="goToEnglishPage()">English</button>
+            <button class="language-button" onclick="goToTeluguPage()">తెలుగు</button>
+        </div>
+    </section>
+
+    <script>
+        function goToEnglishPage() {
+            window.location.href = "homepagetel.html";
+        }
+
+        function goToTeluguPage() {
+            window.location.href = "homepagefinal.html";
+        }
+    </script>
+</body>
+</html>

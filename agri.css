@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header{
+    background-image: url('images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  header h1{
+    font-size: 85px;
+    margin: 30px;
+    font-weight: 500;
+  }
+  header p{
+    font-size: 20px;
+    margin: 0.5rem 0;
+  }
+  header a.cta{
+    background-color:#fff;
+    border:1px solid #333;
+    color: #333;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius:  60px;
+    margin-top: 1rem;
+    transition: all 0.2s;
+  }
+  
+  header a.cta:hover{
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+  }
+  nav{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-bottom: 4rem;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px 7%;
+  }
+  
+  nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav a{
+    color:#fff;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+  main{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3rem 0;
+  }
+  section{
+    width:80%;
+    text-align: center;
+    margin: 2rem;
+  }
+  section h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  section form{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  section input[type="text"],
+  section input[type="email"],
+  section textarea{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: #f2f2f2;
+  
+  }
+  section button[type="submit"]{
+    background-color: #333;
+    color:#fff;
+    padding: 1.5rem;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.2s;
+    width: 100;
+  }
+  section button[type="submit"]:hover{
+    background-color: #fff;
+    color:#333;
+  }
+  footer{
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  footer p{
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  footer a{
+    color: #fff;
+    margin-left: 1rem;
+    text-decoration: none;
+  }
+  
+  @media only screen and (max-width:600px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        flex-direction: column;
+    }
+    main{
+        flex-direction: column;
+    }
+    section{
+        width:100px;
+    }
+  }
+  
+  #about us{
+    line-height: 30px;
+    padding: 50px 7%;
+  }
+  #contact{
+    padding: 50px 7%;
+    line-height: 30px;
+  }
+  #contact h2{
+    margin-bottom: 2rem;
+  }
+  
+  #idea pitch{
+  
+  /* Header Styles */
+  header1{
+    background-image: url('images/brain2.jpg');
+    background-color:white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  h1 {
+    font-size: 30px;
+    margin: 20px 0;
+  }
+  
+  p {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .cta {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  /* Main Content Styles */
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Contact Form Styles */
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 40px;
+    border: 1px solid #ccc;
+  }
+  
+  form button {
+    padding: 30px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  }

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>మాకు సంప్రదించండి - ఫార్మ్ కనెక్ట్</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FAF1E4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            padding: 40px;
+            background-color: #CEDEBD;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+        h1 {
+            color: #9EB384;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #435334;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        textarea {
+            height: 150px;
+        }
+        button {
+            background-color: #9EB384;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+        }
+        button:hover {
+            background-color: #435334;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>మాకు సంప్రదించండి - ఫార్మ్ కనెక్ట్</h1>
+        <p>మీకు ఏమీ ప్రశ్నలు ఉంటే లేదా సహాయం కావాలంటే, మాకు స్వాగతం!</p>
+        <form id="contactForm">
+            <label for="name">పేరు:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">ఇమెయిల్:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">విషయం:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">సందేశం:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">సమర్పించు</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("మాకు సంప్రదించండినందుకు ధన్యవాదాలు. మీ సందేశం స్వీకరించబడింది!");
+            // మీరు ఫార్మ్ డేటాను సర్వర్‌కు పంపడానికి లేదా ఇతర చర్యలను చేయడానికి ఇక్కడ కోడ్ జోడించవచ్చు.
+        });
+    </script>
+</body>
+</html>
